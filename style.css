@@ -44,6 +44,9 @@
 .review-card{
     transition: transform 0.3s zoom-out;
 }
-.card:hover{
-    transform: scale(1.1);
+.review:hover #abc{
+    transform: scale(0.9);
+}
+.review:hover #cde{
+  transform: scale(1.1);
 }
