@@ -1,86 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feane</title>
-     <!-- bootstrap -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feane</title>
 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- bootstrap -->
 
- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-     crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
- <!-- fontawesome -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- css link -->
-     <link rel="stylesheet" href="./style.css">
+  <!-- fontawesome -->
 
-     <!-- google fonts -->
-     <!-- font 1 -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-<!-- font 2 -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css link -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- google fonts -->
+  <!-- font 1 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <!-- font 2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+
+  <!-- script -->
+
 </head>
-<body style="font-family: 'Dancing Script', cursive;">
 
-<img class="bg-img" src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?q=100&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bg Image" >
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#" style="margin-left: 30px;"><h2>Feane</h2></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
-        <ul class="navbar-nav text-center" style="font-family: 'Lato', sans-serif;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">MENU</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              ABOUT
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BOOK TABLE</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex align-items-center" style="font-family: 'Lato', sans-serif;">
-        <!-- Icon -->
-        <a class="text-reset me-3" href="#">
-          <i class="fas fa-shopping-cart text-light"></i>
+<body style="font-family: 'Dancing Script', cursive;;">
+
+  <section id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light transparent fixed-top" style="position: absolute;">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="margin-left: 30px; color: white;">
+          <h2>Feane</h2>
         </a>
-        <a class="text-reset me-3" href="#">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-mdb-target="#navbarCenteredExample"
+          aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+          <ul class="navbar-nav text-center" style="font-family: 'Lato', sans-serif;">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#menu">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">
+                ABOUT
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#book">BOOK TABLE</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center" style="font-family: 'Lato', sans-serif;">
+          <!-- Icon -->
+          <a class="text-reset me-3" href="#">
+            <i class="fas fa-shopping-cart text-light"></i>
+          </a>
+          <a class="text-reset me-3" href="#">
             <i class="fas fa-bell text-light"></i>
-        </a>
-        <a class="text-reset me-3" href="#">
+          </a>
+          <a class="text-reset me-3" href="#">
+            <i class="fas fa-search text-light"></i>
+          </a>
+          <a class="text-reset me-3" href="#">
             <button type="button" class="btn btn-warning text-light">Order Online</button>
-        </a>  
-    </div>
-    </div>
-  </nav>
-  <div class="bg-img-overlay text-center text-light">
-    <h1 style="margin-top: 100px; margin-right: 750px;">Fast Food Restaurant</h1>
-    <p style="text-align: start; margin-left: 110px; margin-right: 700px; margin-top: 10px;font-family: 'Lato', sans-serif; font-size: small;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, nostrum suscipit itaque id dolorem nisi vel eligendi aut incidunt, quisquam illum tempore perspiciatis aliquam eum cum voluptatem illo, mollitia voluptatum.</p>
+          </a>
+        </div>
+      </div>
+    </nav>
 
-    <button type="button" class="btn btn-warning text-light" style="font-family: 'Lato', sans-serif;margin-right: 915px; border-radius: 25px; width: 150px;">Order Now</button>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators" style="margin-bottom: 150px;">
+        <button style="height: 10px; width: 10px; border-radius: 50%; margin-left: -850px; background-color: white;"
+          type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" 
+          aria-current="true" aria-label="Slide 1"></button>
+        <button style="height: 10px; width: 10px; border-radius: 50%; background-color: yellow;" type="button"
+          data-bs-target="#carouselExampleCaptions" class="active" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button style="height: 10px; width: 10px; border-radius: 50%; background-color: white;" type="button"
+          data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
 
-</div>
+      <div class="carousel-inner">
+        <img src="./images/your-image.jpg" class="d-block w-100" alt="img1"
+          style="height: 100vh; width: 100vw; filter: brightness(0.4); object-fit: cover;">
+        <div class="carousel-item active" style="margin-top: -250px;">
+
+          <div class="carousel-caption d-none d-md-block" style="margin-left: -90px; margin-bottom: -80px;">
+            <h1 style="text-align: left;">Fast Food Restaurent</h1>
+            <p
+              style="text-align: left; font-family: 'Lato', sans-serif; font-size: small; margin-right: 490px; margin-left: 10px; margin-top: 10px;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus minima qui, itaque
+              neque voluptates beatae iste vitae molestias repellendus laboriosam eligendi rerum a laudantium, labore,
+              soluta incidunt ipsa earum.</p>
+            <button type="button"
+              style="font-family: 'Lato', sans-serif; margin-left: -830px;  border-radius: 25px; width: 150px;"
+              class="btn btn-warning text-light" type="submit">Order Now</button>
+
+          </div>
+        </div>
+        <div class="carousel-item" style="margin-top: -250px;">
+
+          <div class="carousel-caption d-none d-md-block" style="margin-left: -90px; margin-bottom: -80px;">
+            <h1 style="text-align: left;">Fast Food Restaurent</h1>
+            <p
+              style="text-align: left; font-family: 'Lato', sans-serif; font-size: small; margin-right: 490px; margin-left: 10px; margin-top: 10px;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus minima qui, itaque
+              neque voluptates beatae iste vitae molestias repellendus laboriosam eligendi rerum a laudantium, labore,
+              soluta incidunt ipsa earum.</p>
+            <button type="button"
+              style="font-family: 'Lato', sans-serif; margin-left: -830px;  border-radius: 25px; width: 150px;"
+              class="btn btn-warning text-light" type="submit">Order Now</button>
+
+
+          </div>
+        </div>
+        <div class="carousel-item" style="margin-top: -250px;">
+
+          <div class="carousel-caption d-none d-md-block" style="margin-left: -90px; margin-bottom: -80px;">
+            <h1 style="text-align: left;">Fast Food Restaurent</h1>
+            <p
+              style="text-align: left; font-family: 'Lato', sans-serif; font-size: small; margin-right: 490px; margin-left: 10px; margin-top: 10px;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus minima qui, itaque
+              neque voluptates beatae iste vitae molestias repellendus laboriosam eligendi rerum a laudantium, labore,
+              soluta incidunt ipsa earum.</p>
+            <button type="button"
+              style="font-family: 'Lato', sans-serif; margin-left: -830px;  border-radius: 25px; width: 150px;"
+              class="btn btn-warning text-light" type="submit">Order Now</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row mt-5 ms-3 me-3">
+      <div class="col-1">
+
+      </div>
+
+      <div class="col-5">
+        <div class="card mb-3" style="max-width: 540px; background-color: #232834;">
+          <div class="row g-0">
+            <div class="col-md-4" style="">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww"
+                class="card-img-top rounded-circle border border-4 border-warning" alt="..."
+                style="margin-top: 20px; margin-bottom: 20px; margin-left: 10px; height: 135px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title" style="color: white;">Tasty Thursdays</h4>
+                <span class="word1">20%</span><span class="word2"> off</span>
+                <br>
+                <button type="button" style="font-family: 'Lato', sans-serif;border-radius: 25px; width: 130px;"
+                  class="btn btn-warning text-light" type="submit">Order Now <i
+                    class="fas fa-shopping-cart text-light"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-5">
+        <div class="card mb-3" style="max-width: 540px; background-color: #232834;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://img.freepik.com/premium-photo/fresh-homemade-italian-pizza-margherita-with-buffalo-mozzarella-basil_914391-419.jpg"
+                class="card-img-top rounded-circle border border-4 border-warning" alt="..."
+                style="margin-top: 20px; margin-bottom: 20px; margin-left: 10px; height: 135px;">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title" style="color: white;">Pizza Days</h4>
+                <span class="word1">15%</span><span class="word2"> off</span>
+                <br>
+                <button type="button" style="font-family: 'Lato', sans-serif;border-radius: 25px; width: 130px;"
+                  class="btn btn-warning text-light" type="submit">Order Now <i
+                    class="fas fa-shopping-cart text-light"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1">
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="row mt-5 text-center" style="justify-content: center;">
+
+      <h3>Our Menu</h3>
+      <div class="text-center mt-4">
+        <button type="button" style="font-family: 'Lato', sans-serif;border-radius: 25px; width: 100px;"
+          class="hovers btn btn-light" type="submit">All</button>
+        <button type="button" style="font-family: 'Lato', sans-serif;border-radius: 25px; width: 100px;"
+          class="hovers btn btn-light" type="submit">Burger</button>
+        <button type="button" style="font-family: 'Lato', sans-serif;border-radius: 25px; width: 100px;"
+          class="hovers btn btn-light" type="submit">Pizza</button>
+        <button type="button" style="font-family: 'Lato', sans-serif;border-radius: 25px; width: 100px;"
+          class="hovers btn btn-light" type="submit">Pasta</button>
+        <button type="button" style="font-family: 'Lato', sans-serif;border-radius: 25px; width: 100px;"
+          class="hovers btn btn-light" type="submit">Fries</button>
+      </div>
+
+      <div class="row mt-3" style="font-family: 'Lato', sans-serif;">
+        <div class="col-2">
+          <!-- empty column -->
+        </div>
+
+        <div class="col-8">
+
+          <div class="row">
+
+            <div class="col-4">
+              <div class="card" style="width: 16.5rem; justify-content: center;">
+                <img
+                  src="https://media.istockphoto.com/id/1494273340/photo/pizza-with-pepperoni-arugula-ketchup-tomatoes-and-cheese-in-a-plate-on-a-white-background.jpg?s=612x612&w=0&k=20&c=NRzrA25kbUCPBMkJSU3liMlo2HWJW8nqHLSTShAEjx0="
+                  class="card-img-top" alt="img2" style="height: 150px; width: 100%;">
+                <div class="card-body" style="background-color: #222832; font-size: small; text-align: left;">
+                  <h5 class="card-title text-light" style="font-size: medium;"><b>Delicious Pizza</b></h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                    corporis ratione ipsa minima modi aspernatur, officiis.</p>
+
+                  <span class="text-light">$20</span><span class="text-center"
+                    style="text-align: center; justify-content: center; margin-left: 160px;"><a href="#"
+                      class="btn btn-warning" style="border-radius: 50%;height: 30px; width: 30px;"><i
+                        class="fas fa-shopping-cart text-light" style="height: 10px; margin-left: -8px;"></i></a></span>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card" style="width: 16.5rem; justify-content: center;">
+                <img
+                  src="https://media.istockphoto.com/id/153485340/photo/nice-cheeseburger-on-white.jpg?s=612x612&w=0&k=20&c=buTOnWszFiQ_8E0VC9jeyG0k47ADFMXfWdfPSC4MNgc="
+                  class="card-img-top" alt="img2" style="height: 150px; width: 100%;">
+                <div class="card-body" style="background-color: #222832; font-size: small; text-align: left;">
+                  <h5 class="card-title text-light" style="font-size: medium;"><b>Delicious Burger</b></h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                    corporis ratione ipsa minima modi aspernatur, officiis.</p>
+
+                  <span class="text-light">$15</span><span class="text-center"
+                    style="text-align: center; justify-content: center; margin-left: 160px;"><a href="#"
+                      class="btn btn-warning" style="border-radius: 50%;height: 30px; width: 30px;"><i
+                        class="fas fa-shopping-cart text-light" style="height: 10px; margin-left: -8px;"></i></a></span>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card" style="width: 16.5rem; justify-content: center;">
+                <img
+                  src="https://media.istockphoto.com/id/1580882222/photo/top-view-smoked-beef-pizza-with-arugula-and-parmesan-cheese.jpg?s=612x612&w=0&k=20&c=LS6R74B7XCdegWDQAjtC7AaUfCTJHF-XgJoN4ONyvOM="
+                  class="card-img-top" alt="img2" style="height: 150px; width: 100%;">
+                <div class="card-body" style="background-color: #222832; font-size: small; text-align: left;">
+                  <h5 class="card-title text-light" style="font-size: medium;"><b>Delicious Pizza</b></h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                    corporis ratione ipsa minima modi aspernatur, officiis.</p>
+
+                  <span class="text-light">$17</span><span class="text-center"
+                    style="text-align: center; justify-content: center; margin-left: 160px;"><a href="#"
+                      class="btn btn-warning" style="border-radius: 50%;height: 30px; width: 30px;"><i
+                        class="fas fa-shopping-cart text-light" style="height: 10px; margin-left: -8px;"></i></a></span>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-2">
+          <!-- empty column -->
+        </div>
+      </div>
+
+      <!-- 2nd row -->
+
+      <div class="row mt-3" style="font-family: 'Lato', sans-serif;">
+        <div class="col-2">
+          <!-- empty column -->
+        </div>
+
+        <div class="col-8">
+
+          <div class="row">
+
+            <div class="col-4">
+              <div class="card" style="width: 16.5rem; justify-content: center;">
+                <img
+                  src="https://media.istockphoto.com/id/184120573/photo/spaghetti-with-pesto-sauce.jpg?s=612x612&w=0&k=20&c=stj854S-i-VAU09RXsGdYZjYyTriqGEPdR66REEUjsE="
+                  class="card-img-top" alt="img2" style="height: 150px; width: 100%;">
+                <div class="card-body" style="background-color: #222832; font-size: small; text-align: left;">
+                  <h5 class="card-title text-light" style="font-size: medium;"><b>Delicious Pasta</b></h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                    corporis ratione ipsa minima modi aspernatur, officiis.</p>
+
+                  <span class="text-light">$18</span><span class="text-center"
+                    style="text-align: center; justify-content: center; margin-left: 160px;"><a href="#"
+                      class="btn btn-warning" style="border-radius: 50%;height: 30px; width: 30px;"><i
+                        class="fas fa-shopping-cart text-light" style="height: 10px; margin-left: -8px;"></i></a></span>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card" style="width: 16.5rem; justify-content: center;">
+                <img
+                  src="https://media.istockphoto.com/id/499580476/photo/bowl-of-french-fries.jpg?s=612x612&w=0&k=20&c=uEK8-d-GX7Hn1mjDK-JG1Nn1K5L6tAauISEtOvWoxbI="
+                  class="card-img-top" alt="img2" style="height: 150px; width: 100%;">
+                <div class="card-body" style="background-color: #222832; font-size: small; text-align: left;">
+                  <h5 class="card-title text-light" style="font-size: medium;"><b>French Fries</b></h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                    corporis ratione ipsa minima modi aspernatur, officiis.</p>
+
+                  <span class="text-light">$10</span><span class="text-center"
+                    style="text-align: center; justify-content: center; margin-left: 160px;"><a href="#"
+                      class="btn btn-warning" style="border-radius: 50%;height: 30px; width: 30px;"><i
+                        class="fas fa-shopping-cart text-light" style="height: 10px; margin-left: -8px;"></i></a></span>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card" style="width: 16.5rem; justify-content: center;">
+                <img
+                  src="https://media.istockphoto.com/id/490362806/photo/delicious-pizza-with-mushrooms-chili-and-pepperoni.jpg?s=612x612&w=0&k=20&c=Kf_xOgb_juAVRSAU2kxthvxT6srgC-DGQSVCCVBOIWk="
+                  class="card-img-top" alt="img2" style="height: 150px; width: 100%;">
+                <div class="card-body" style="background-color: #222832; font-size: small; text-align: left;">
+                  <h5 class="card-title text-light" style="font-size: medium;"><b>Delicious Pizza</b></h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                    corporis ratione ipsa minima modi aspernatur, officiis.</p>
+
+                  <span class="text-light">$15</span><span class="text-center"
+                    style="text-align: center; justify-content: center; margin-left: 160px;"><a href="#"
+                      class="btn btn-warning" style="border-radius: 50%;height: 30px; width: 30px;"><i
+                        class="fas fa-shopping-cart text-light" style="height: 10px; margin-left: -8px;"></i></a></span>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-2">
+          <!-- empty column -->
+        </div>
+      </div>
+
+      <!-- 3rd row -->
+
+      <div class="row mt-3" style="font-family: 'Lato', sans-serif;">
+        <div class="col-2">
+          <!-- empty column -->
+        </div>
+
+        <div class="col-8">
+
+          <div class="row">
+
+            <div class="col-4">
+              <div class="card" style="width: 16.5rem; justify-content: center;">
+                <img
+                  src="https://media.istockphoto.com/id/1225283516/photo/double-white-hamburgers-with-chicken-juicy-cutlet-with-cheese-onions-lettuce-herbs-tomatoes.jpg?s=612x612&w=0&k=20&c=PCwG-on57oid85znouh1Ji-EoNoSS2C_tdTaiWOoLFU="
+                  class="card-img-top" alt="img2" style="height: 150px; width: 100%;">
+                <div class="card-body" style="background-color: #222832; font-size: small; text-align: left;">
+                  <h5 class="card-title text-light" style="font-size: medium;"><b>Tasty Burger</b></h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                    corporis ratione ipsa minima modi aspernatur, officiis.</p>
+
+                  <span class="text-light">$12</span><span class="text-center"
+                    style="text-align: center; justify-content: center; margin-left: 160px;"><a href="#"
+                      class="btn btn-warning" style="border-radius: 50%;height: 30px; width: 30px;"><i
+                        class="fas fa-shopping-cart text-light" style="height: 10px; margin-left: -8px;"></i></a></span>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card" style="width: 16.5rem; justify-content: center;">
+                <img
+                  src="https://media.istockphoto.com/id/1165924052/photo/delicious-double-tasty-hamburger-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=shh3sHI0lBUXj6VhcaTusVyXx9-m8Gq6gfN34bW6gbQ="
+                  class="card-img-top" alt="img2" style="height: 150px; width: 100%;">
+                <div class="card-body" style="background-color: #222832; font-size: small; text-align: left;">
+                  <h5 class="card-title text-light" style="font-size: medium;"><b>Tasty Burger</b></h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                    corporis ratione ipsa minima modi aspernatur, officiis.</p>
+
+                  <span class="text-light">$14</span><span class="text-center"
+                    style="text-align: center; justify-content: center; margin-left: 160px;"><a href="#"
+                      class="btn btn-warning" style="border-radius: 50%;height: 30px; width: 30px;"><i
+                        class="fas fa-shopping-cart text-light" style="height: 10px; margin-left: -8px;"></i></a></span>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="card" style="width: 16.5rem; justify-content: center;">
+                <img
+                  src="https://media.istockphoto.com/id/1029350234/photo/pasta-with-meat-tomato-sauce-and-vegetables.jpg?s=612x612&w=0&k=20&c=clJx-V8-kh6tJUzclHnFQDRF_fMNNSYTAYno_JuXoWY="
+                  class="card-img-top" alt="img2" style="height: 150px; width: 100%;">
+                <div class="card-body" style="background-color: #222832; font-size: small; text-align: left;">
+                  <h5 class="card-title text-light" style="font-size: medium;"><b>Delicious Pasta</b></h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+                    corporis ratione ipsa minima modi aspernatur, officiis.</p>
+
+                  <span class="text-light">$10</span><span class="text-center"
+                    style="text-align: center; justify-content: center; margin-left: 160px;"><a href="#"
+                      class="btn btn-warning" style="border-radius: 50%;height: 30px; width: 30px;"><i
+                        class="fas fa-shopping-cart text-light" style="height: 10px; margin-left: -8px;"></i></a></span>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-2">
+          <!-- empty column -->
+        </div>
+      </div>
+
+      <button type="button" style="font-family: 'Lato', sans-serif;border-radius: 25px; width: 150px;"
+        class="btn btn-warning mt-5 text-light" type="submit">View More</button>
+
+    </div>
+  </section>
+  <br><br>
+  <section id="about">
+    <div class="container-fluid" style="background-color: #232834; display: flex;">
+      <img src="./images/about-img.png" alt="img2" width="280px" height="350px"
+        style="margin-top: 60px; margin-bottom: 60px; margin-left: 155px;" class="bg-img">
+      <div class="bg-img-overlay text-light" style="text-align: left; margin-left: 60px; margin-right:290px ;">
+        <h2 style="margin-top: 160px;">We Are Feane</h2>
+        <p style="font-family: 'Lato', sans-serif; font-size: 14.5px; text-align: justify;">There are many variations of
+          passages of lorem ipsium available, but the majority have suffered alteration of some form by injected
+          function or randomised words which don't look even slightly believable. If you are going to use a passage of
+          lorem ipsium, you need to make sure there isn't anything embarassing hidden in the middle of the text </p>
+
+        <button type="button" class="btn btn-warning text-light"
+          style="font-family: 'Lato', sans-serif; font-size: small; border-radius: 25px; width: 150px;">Read
+          More</button>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="row mt-5">
+      <div class="col-1">
+        <!-- empty column -->
+      </div>
+
+      <div class="col-5" width="500px">
+        <!-- form -->
+
+        <h2 style="text-align: left;">Book A Table</h2>
+        <br>
+        <form style="font-family: 'Lato', sans-serif;">
+          <input type="text" class="form-control border border-dark" placeholder="Your name">
+          <br>
+          <input type="text" class="form-control border border-dark" placeholder="Phone Number">
+          <br>
+          <input type="email" class="form-control border border-dark" placeholder="Your Email">
+          <br>
+          <select name="" id="" class="form-control border border-dark">
+
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="" selected hidden>How many persons?</option>
+
+          </select>
+          <br>
+          <input type="date" class="form-control border border-dark" placeholder="">
+        </form>
+        <br>
+        <button type="button" class="btn btn-warning text-light"
+          style="width: 150px; font-family: 'Lato', sans-serif; font-size: small; border-radius: 25px;">BOOK
+          NOW</button>
+
+      </div>
+
+      <div class="col-5" style="margin-left: 15px; margin-top: 65px;">
+        <!-- map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12152180.417115437!2d-104.5581335!3d41.96075180000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3dab2b10f57%3A0xfc7d79f6671428d6!2sThe%20Pasta%20Bowl%20-%20Lincoln%20Square!5e0!3m2!1sen!2sus!4v1705601924273!5m2!1sen!2sus"
+          width="500" height="290" style="border-radius: 15px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+
+      <div class="col-1">
+        <!-- empty column -->
+      </div>
+
+    </div>
+  </section>
+
+  <section class="review">
+    <div class="row mt-5 text-center">
+      <h2>What Says Our Customers</h2>
+
+      <div class="row mt-5">
+        <div class="col-1">
+
+        </div>
+        <div class="col-5">
+          <div class="card" style="width: 30rem; border: none;">
+            <div class="card-body text-light" style="background-color: #232834; font-family: 'Lato', sans-serif;">
+              <p class="card-text" style="font-size: small; text-align: left;">Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Provident deleniti nihil, hic natus nisi minus nam quisquam non quaerat debitis</p>
+              <h6 style="text-align: left; font-size: 15px;">Moana Michell</h6>
+              <p style="text-align: left; font-size: small;">magna aliqua</p>
+            </div>
+            <img src="./images/client1.jpg" class="card-img-top rounded-circle border border-warning border-4"
+              alt="img3" style="height: 90px; width: 90px; margin-top: 10px; margin-left: 10px;">
+          </div>
+
+        </div>
+        <div class="col-5">
+          <div class="card" style="width: 30rem; border: none;">
+            <div class="card-body text-light" style="background-color: #232834; font-family: 'Lato', sans-serif;">
+              <p class="card-text" style="font-size: small; text-align: left;">Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Provident deleniti nihil, hic natus nisi minus nam quisquam non quaerat debitis</p>
+              <h6 style="text-align: left; font-size: 15px;">Mike Hamell</h6>
+              <p style="text-align: left; font-size: small;">magna aliqua</p>
+            </div>
+            <img src="./images/client2.jpg" class="card-img-top rounded-circle border border-warning border-4"
+              alt="img3" style="height: 90px; width: 90px; margin-top: 10px; margin-left: 10px;">
+          </div>
+
+        </div>
+        <div class="col-1">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer mt-5 text-light">
+    <!-- Footer -->
+    <footer class="text-center text-light" style="background-color: #232834;">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h4 class="text fw-bold mb-3">Contact Us</h4>
+
+            <p style="font-family: 'Lato', sans-serif;"><i class="fa-solid fa-location-dot"></i> Location</p>
+            <p style="font-family: 'Lato', sans-serif;"><i class="fas fa-phone me-3"></i>Call +01 1234567890</p>
+            <p style="font-family: 'Lato', sans-serif;">
+              <i class="fas fa-envelope me-3"></i>
+              feane@gmail.com
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
+            <h3 class="text">Feane</h3>
+
+            <p style="font-family: 'Lato', sans-serif; font-size: 17px; margin-top: 20px;">Necessary, making this the first true generator
+              on the internet. It uses a dictionary of over 20C Latin words, combined with</p>
+
+            <!-- Facebook -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-facebook-f text-light"></i></a>
+
+            <!-- Twitter -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-twitter text-light"></i></a>
+
+            <!-- Instagram -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-instagram text-light"></i></a>
+
+            <!-- Linkedin -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-linkedin text-light"></i></a>
+            <!-- Github -->
+            <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-github text-light"></i></a>
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h4 class="text">Opening Hours</h4>
+
+            <p style="font-family: 'Lato', sans-serif; font-size: 16px; margin-top: 15px;">Everyday</p>
+            <p style="font-family: 'Lato', sans-serif; font-size: 16px;">12:00 am to 10:00 pm</p>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);font-family: 'Lato', sans-serif;  ">
+        © 2023 All Rights Reserved By Free Html Templates
+        
+        <p style="margin-top: 10px;"> © Distributed By ThemeWagon</p>
+        
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
 </body>
-
 
 </html>
