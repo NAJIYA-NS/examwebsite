@@ -41,12 +41,17 @@
     color: white;
 }
 
-.review-card{
-    transition: transform 0.3s zoom-out;
+.cards-wrapper{
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s zoom-out;
 }
-.review:hover #abc{
-    transform: scale(0.9);
+.cards-wrapper img{
+  margin-bottom: 10px;
 }
-.review:hover #cde{
+.cards-wrapper:hover #abc{
+  transform: scale(0.9);
+}
+.cards-wrapper:hover #cde{
   transform: scale(1.1);
 }
